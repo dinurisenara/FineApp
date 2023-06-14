@@ -4,7 +4,7 @@ const Adduser = () =>{
         <div>
            <>
   <h2 className="mainheader_signup">
-    SIGN-UP
+   ADD USER
   </h2>
   <form>
     <label htmlFor="id_signup">ENTER ID:</label><br />
@@ -13,7 +13,7 @@ const Adduser = () =>{
     <input type="text" id="password_signup" name="password_signup" value="" /><br />
     <label htmlFor="confirmpassword_signup">CONFIRM PASSWORD:</label><br />
     <input type="text" id="confirmpassword_signup" name="confirmpassword_signup" value="" /><br />
-    <button className="button_signup">Sign-up</button><br />
+    <button className="button_signup">ADD USER</button><br />
   </form>
 </>
 

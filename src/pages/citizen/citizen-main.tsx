@@ -6,9 +6,12 @@ const CitizenMain = () =>{
     const paynow = () =>{
         navigate("/payment")
     }
+    const logout = () =>{
+        navigate('/')
+    }
     return(
         <div>
-        
+        <button onClick={logout}>Log-Out</button>
         <button onClick={paynow}>Pay Now</button>
         </div>
         )

@@ -1,4 +1,9 @@
+import {  useNavigate } from "react-router-dom";
 export const IssueTicket = () => {
+  const navigate = useNavigate();
+  const issueconf = () =>{
+    navigate ('/fineissued-conf')
+  }
   return (
     <div className="container_issue_ticket">
       <form className="form_issue_ticket">
@@ -35,7 +40,7 @@ export const IssueTicket = () => {
         </div>
         
         <div className="form-row">
-          <button className="button_issue_ticket">ISSUE TICKET</button>
+          <button className="button_issue_ticket" onClick={issueconf}>ISSUE TICKET</button>
         </div>
         </form>
     </div>
