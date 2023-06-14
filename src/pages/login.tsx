@@ -1,7 +1,16 @@
 import { useState } from "react";
+import {useForm} from 'react-hook-form';
+import * as yup from 'yup';
+
+
 
 export const Login = () => {
+    const {register , handleSubmit , formState: {errors}} = useForm();
+
     
+    const onSubmit = (data: any) => {
+        console.log(data)
+    };
         const [userType, setUserType] = useState('citizen');
       
         const handleUserTypeChange = (e:any ) => {
@@ -9,13 +18,14 @@ export const Login = () => {
         };
       
         return (
-          <form className="form-container">
+          <form className="form-container" onSubmit={handleSubmit(onSubmit)} >
             <label htmlFor="username">{userType === 'officer' ? 'Officer ID:' : 'NIC:'}</label>
             <br />
-            <input type="text" id="username" name="username" />
+            <input type="text" id="username" {...register("id")}/>
+            
             <label htmlFor="password">PASSWORD:</label>
             <br />
-            <input type="password" id="password" name="password" />
+            <input type="password" id="password"  {...register("password")}/>
       
             <div className="radio-group">
               <input

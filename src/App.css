@@ -1,0 +1,282 @@
+.App {
+  display: flex;
+  flex-direction: column;  
+  }
+.Loginbody {
+  display: flex;
+  justify-content: center; 
+  height: fit-content;
+  padding: 100px;
+}
+
+.login-heading { 
+  align-self: self-start;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+ 
+  
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.form-container label {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  margin-bottom: 16px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 300px;
+  }
+  
+  .form-container label,
+  .form-container input[type="text"],
+  .form-container input[type="password"],
+  .form-container input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+
+
+.emblem {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100px;
+  height: auto;
+  justify-content: center;
+  align-self: center;
+}
+/*---------------------------Styling for the Officer main page----------------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+ 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.button {
+  margin: 8px;
+  padding: 12px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+
+@media (min-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+  
+  .button {
+    margin: 8px;
+  }
+}
+
+/*-------------------------------------Add-user-Styling---------------------------------*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container_signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container_signup h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.container_signup label {
+  margin-bottom: 8px;
+}
+
+.container_signup input[type="text"],
+.container_signup input[type="password"] {
+  margin-bottom: 16px;
+  padding: 4px;
+  width: 100%;
+}
+
+.container_signup , button {
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container_signup {
+    max-width: 600px;
+  }
+}
+
+/*-------------------------------------------Ticket issue ------------------------------------------------------------*/
+.container_issue_ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 20px;
+}
+
+.form_issue_ticket {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"] {
+  padding: 8px;
+  width: 100%; /* Add this to make inputs fill the width */
+}
+
+.button_issue_ticket {
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .form_issue_ticket {
+    width: 400px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-row label {
+    margin-right: 10px;
+    flex-basis: 100px; /* Adjust the width of labels as needed */
+  }
+}
+/*---------------------------------------Ticket-- isue - confirmation -------------------------------------*/
+.container0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-text {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.confirmation-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.download-receipt-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+/*------------------------------------------Styling for the oayment confirmation---------------------------*/
+.container0_payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-text_payment {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.confirmation-icon_payment {
+  font-size: 48px;
+  color: green;
+  margin-top: 20px;
+}
+
+.download-receipt-text_payment {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.button_payment {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.button_payment:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
