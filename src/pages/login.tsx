@@ -1,15 +1,19 @@
 import { useState } from "react";
 import {useForm} from 'react-hook-form';
 import * as yup from 'yup';
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 
 export const Login = () => {
     const {register , handleSubmit , formState: {errors}} = useForm();
-
+  const navigate = useNavigate();
     
     const onSubmit = (data: any) => {
         console.log(data)
+        // have to add the confirmation from the data base 
+       userType === 'citizen'? navigate('/citizen-main'): navigate('/officer-main')
+
     };
         const [userType, setUserType] = useState('citizen');
       
