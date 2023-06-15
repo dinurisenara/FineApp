@@ -1,9 +1,13 @@
 import { signOut } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
 import { auth } from "../../config/firebase";
+import { onAuthStateChanged } from "firebase/auth";
+import { useState } from "react";
 export 
 
+
 const CitizenMain = () =>{
+    
     const navigate = useNavigate();
     
     const paynow = () =>{

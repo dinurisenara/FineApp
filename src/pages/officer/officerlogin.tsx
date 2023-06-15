@@ -18,13 +18,13 @@ export const LoginOfficer = () => {
       
         return (
           <form className="form-container" onSubmit={handleSubmit(onSubmit)} >
-            <label htmlFor="username">Email</label>
+            <label >Email</label>
             <br />
-            <input type="email" id="username" {...register("email")}/>
+            <input  id="username" />
             
             <label htmlFor="password">PASSWORD:</label>
             <br />
-            <input type="password" id="password"  {...register("password")}/>
+            <input type="password" id="password"  />
       
            
       
