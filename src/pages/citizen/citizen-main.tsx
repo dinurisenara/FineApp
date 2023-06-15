@@ -17,7 +17,7 @@ const CitizenMain = () =>{
         try {
           await signOut (auth);
           console.log(auth?.currentUser?.email)
-          navigate('/')
+          navigate('/citizenlogin')
         } catch(err){
           console.error(err)
         }
