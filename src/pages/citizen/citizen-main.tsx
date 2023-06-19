@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { auth } from "../../config/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
+import { Fine } from "./fine";
 export 
 
 
@@ -26,6 +27,7 @@ const CitizenMain = () =>{
     return(
         <div>
         <button onClick={logout}>Log-Out</button>
+        <Fine/>
         <button onClick={paynow}>Pay Now</button>
         </div>
         )

@@ -26,6 +26,7 @@ export const LoginUser = () => {
   const onSubmit = (data: any) => {
     loginuser();
   };
+  
   const loginuser = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);

@@ -29,6 +29,7 @@ function App() {
           <Route path='/payment' element={<Payment/>}/>
           <Route path='/fineissued-conf' element={<FineissuedConf/>}/>
           <Route path='/paymentconf' element={<PaymentConf/>}/>
+          <Route path='*' element={<h1>404 Not Found</h1>}/>
           
         </Routes>
       </Router>
