@@ -6,12 +6,12 @@
 
 
 body{
-    background-color: rgb(143, 120, 120);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding:0;
-    margin:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(55, 81, 88);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0;
+  margin:0;
+  font-family:'Poppins', sans-serif;
   }
   
 
@@ -22,6 +22,15 @@ body{
   padding: 100px;
   
 
+}
+form{
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  border: 2px solid rgba(8, 6, 6, 0.1);
+  border-color: rgb(0, 0, 0);
+  padding: 50px 35px;
+  padding-top: 40PX;
 }
 
 .login-heading { 
@@ -37,13 +46,11 @@ body{
 
 .form-container {
   display: grid;
-  flex-direction:row;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid black;
-  max-width: 400px;
-  width: 100%;
-  position: relative;
+  grid-template-columns: 1fr;
+  padding: 80px;
+  justify-items: center;
+  text-align: center;
+  align-items: center
 }
 
 .form-container label {
@@ -111,12 +118,14 @@ body{
   
 }
 
+
 .button {
   margin: 8px;
   padding: 12px 20px;
   background-color: rgb(0, 0, 0);
   color: white;
   border: none;
+  font-family:'Poppins', sans-serif;
 }
 
 
@@ -146,14 +155,24 @@ body {
   justify-items: center;
   text-align: center;
   align-items: center;
+  
+}
+label{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
-.container_signup h2 {
-  text-align: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-bottom: 16px;
+h2.mainheader_signup {
+  letter-spacing: 12px;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 0;
+  align-items:center;
+  font-family:'Poppins', sans-serif;
 
 }
+
+
 
 .container_signup label {
   margin-bottom: 20px;
@@ -167,24 +186,9 @@ body {
   width: 100%;
 }
 
-.container_signup , button {
-  font-family: 'Poppins', 'sans-serif';
-margin-top: 30px;
-margin-bottom: 10px;
- background-color: #f3f3f3;
- border: none;
- color: rgb(0, 0, 0);
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 16px;
- transition-duration: 0.4s;
- cursor: pointer;
- border-radius: 6px;
- padding: 10px 24px;
- box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
- 
-}
+  
+
+
 
 @media (min-width: 768px) {
   .container_signup {
@@ -230,22 +234,11 @@ margin-bottom: 10px;
 }
 
 .button_issue_ticket {
-  font-family: 'Poppins', 'sans-serif';
-  margin-top: 30px;
-  margin-bottom: 10px;
-   background-color: #abbec5;
-   border: none;
-   color: rgb(22, 19, 19);
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   transition-duration: 0.4s;
-   cursor: pointer;
-   border-radius: 6px;
-   padding: 10px 24px;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-   align-items: center;
+  margin: 8px;
+  padding: 12px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
    
   
 }
@@ -268,46 +261,29 @@ margin-bottom: 10px;
 /*---------------------------------------Ticket-- isue - confirmation -------------------------------------*/
 .container0 {
   display: grid;
-  grid-template-columns: 1fr;
   padding: 80px;
   justify-items: center;
   text-align: center;
   align-items: center;
 }
 
-.confirmation-text {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.confirmation-icon {
-  font-size: 48px;
+p.confirmation-text {
+  font-size: 34px;
   margin-bottom: 16px;
   
 }
 
-.download-receipt-text {
-  font-size: 16px;
-  margin-bottom: 16px;
+span.confirmation-icon {
+  font-size: 48px;
+
+ 
+}
+button.button{
+  margin-top: 50px;
 }
 
-.button {
-  font-family: 'Poppins', 'sans-serif';
-  margin-top: 30px;
-  margin-bottom: 10px;
-   background-color: #f3f3f3;
-   border: none;
-   color: rgb(0, 0, 0);
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   transition-duration: 0.4s;
-   cursor: pointer;
-   border-radius: 6px;
-   padding: 10px 24px;
-   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
-}
+
+
 /*------------------------------------------Styling for the oayment confirmation---------------------------*/
 .container0_payment {
   display: flex;

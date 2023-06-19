@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "finea-86904"
-  }
+    "default": "finea-86904",
+    "hosting ": "finea-86904",
+    "project ": "finea-86904"
+  },
+  "targets": {},
+  "etags": {}
 }
